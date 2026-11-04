@@ -1,0 +1,29 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import Link from "@components/Link.astro";
+---
+
+<Layout title="About" description="jhojin7의 소개와 연락처">
+  <Container>
+    <article class="animate space-y-8">
+      <h1 class="font-semibold text-black dark:text-white">About</h1>
+      <section class="space-y-4">
+        <h2>안녕하세요, jhojin7입니다.</h2>
+        <p>이곳은 프로젝트와 생각을 기록하는 개인 공간입니다.</p>
+        <p>
+          만들고 있는 것들은 <Link href="/projects">Projects</Link>에, 글은 <Link
+            href="/blog">Blog</Link
+          >에 모아 둡니다.
+        </p>
+      </section>
+      <section class="space-y-4">
+        <h2>Links</h2>
+        <p>
+          <Link href="https://github.com/jhojin7" external
+            >GitHub · jhojin7</Link>
+        </p>
+      </section>
+    </article>
+  </Container>
+</Layout>
